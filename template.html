@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poliklinik Medan Putra</title>
+    <style>
+        html, body {
+            width: 210mm;
+            height: 297mm;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header, .footer {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header {
+            top: 0;
+            height: 120px; /* Specified height to prevent overlap */
+        }
+
+        .footer {
+            bottom: 0;
+            height: 60px; /* Specified height for footer */
+        }
+
+        .clinic-logo {
+            width: 150px;
+            height: auto;
+        }
+
+        .clinic-info {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .clinic-name {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .clinic-address {
+            font-size: 0.8em;
+        }
+
+        .contact-info {
+            font-size: 0.8em;
+            display: block;
+        }
+        
+        .phone, .email {
+            display: block;
+        }
+
+        #editableContent {
+            margin-top: 130px; /* Top margin */
+            margin-bottom: 70px; /* Bottom margin */
+            padding: 20px;
+            min-height: 200px; /* Ensures visibility and space */
+            background-color: #f0f0f0; /* Distinct background */
+            overflow: auto; /* Scroll for overflow */
+            text-align: left; /* Aligns text to the left */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.imgur.com/72I9ZVe.jpeg" alt="Clinic Logo" class="clinic-logo">
+        <div class="clinic-info">
+            <h1 class="clinic-name">POLIKLINIK MEDAN PUTRA</h1>
+            <p class="clinic-address">51G, Jalan Medan Putra 1 Medan Putra Business Centre, Bandar Menjalara, 52200 Kuala Lumpur<br>Operation Time: 8am until 11pm everyday</p>
+        </div>
+    </div>
+
+    <div id="editableContent" contenteditable="true">
+        Click here to edit content. Type the information you need, and it will appear here.
+    </div>
+
+    <div class="footer">
+        <p class="contact-info">
+            <span class="phone">Phone: 0189838104</span>
+            <span class="email">Email: poliklinikmedanputra001@gmail.com</span>
+        </p>
+    </div>
+</body>
+</html>
+
